@@ -12,8 +12,10 @@ docker image build -t monitor:1.0 -f monitor/Dockerfile monitor
 ```shell
 docker network create my-network
 docker container run -d --network=my-network --name=web web:1.0
-docker container run -d --network=my-network --name=monitor monitor:1.0
+docker container run -d --network=my-network --name=monitor monitor:1.0 [INTERVAL]
 ```
+
+- `INTERVAL` - Interval in seconds, default 1
 
 ## Test
 

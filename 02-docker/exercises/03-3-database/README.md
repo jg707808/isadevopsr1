@@ -26,3 +26,9 @@ mysql --protocol=tcp -h localhost -D database -u user -p
 ```
 
 Password: password.
+
+## Test
+
+```sql
+SELECT * FROM tasks;
+```

@@ -1,0 +1,9 @@
+.dockerignore
+Dockerfile
+env.list
+env.list.example
+venv/
+*.log
+*.db
+.gitignore
+README.md

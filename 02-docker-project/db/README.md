@@ -8,8 +8,8 @@ docker image build -t db:1.0 .
 
 ## Configure
 
-Rename the `.env.list.example` file to `.env.list`.\
-Set the values of the environment variables in the `.env.list` file.
+Rename the `env.list.example` file to `env.list`.\
+Set the values of the environment variables in the `env.list` file.
 
 ## Run
 

@@ -12,4 +12,4 @@ EXPOSE 5000
 
 COPY . .
 
-CMD ["python", "app.py"]
+ENTRYPOINT ["python", "app.py"]

@@ -22,3 +22,10 @@ docker container run -d --network=my-network --name=monitor monitor:1.0 [INTERVA
 ```shell
 docker container logs -f monitor
 ```
+
+## Use Dosker Compose
+
+```shell
+docker-compose up -d
+docker-compose logs -f monitor
+```

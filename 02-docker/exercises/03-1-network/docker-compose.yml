@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+
+  monitor:
+    build: monitor
+    command: ["2"]
+    image: monitor:1.0
+
+  web:
+    build: web
+    image: web:1.0

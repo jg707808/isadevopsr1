@@ -19,3 +19,10 @@ docker container run -d --name=reader -v shared:/tmp/shared reader:1.0
 ```shell
 docker container logs -f reader
 ```
+
+## Use Dosker Compose
+
+```shell
+docker-compose up -d
+docker-compose logs -f reader
+```

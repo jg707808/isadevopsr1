@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+
+  reader:
+    build: reader
+    image: reader:1.0
+    volumes:
+      - shared:/tmp/shared
+
+  writer:
+    build: writer
+    image: writer:1.0
+    volumes:
+      - shared:/tmp/shared
+
+volumes:
+  shared:

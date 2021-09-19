@@ -35,6 +35,9 @@ SELECT * FROM tasks;
 
 ## Use Dosker Compose
 
+Rename the `.env.example` file to `.env`.\
+Set the values of the environment variables in the `.env` file.
+
 ```shell
 docker-compose up -d
 ```

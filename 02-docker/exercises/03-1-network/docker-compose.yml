@@ -5,6 +5,8 @@ services:
   monitor:
     build: monitor
     command: ["2"]
+    depends_on:
+      - web
     image: monitor:1.0
 
   web:

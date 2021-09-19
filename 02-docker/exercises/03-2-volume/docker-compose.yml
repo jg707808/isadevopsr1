@@ -4,6 +4,8 @@ services:
 
   reader:
     build: reader
+    depends_on:
+      - writer
     image: reader:1.0
     volumes:
       - shared:/tmp/shared

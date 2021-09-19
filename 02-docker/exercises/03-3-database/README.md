@@ -32,3 +32,11 @@ Password: password.
 ```sql
 SELECT * FROM tasks;
 ```
+
+## Use Dosker Compose
+
+```shell
+docker-compose up -d
+```
+
+Connect and test as described above.

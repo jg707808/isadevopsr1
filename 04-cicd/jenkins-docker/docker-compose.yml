@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+
+  docker:
+    command: ["--storage-driver", "overlay2"]
+    environment:
+      DOCKER_TLS_CERTDIR: /certs
+    image: docker:dind
+    privileged: true
+    volumes:
+      - data:/var/jenkins_home
+      - docker-certs:/certs/client
+      - docker:/var/lib/docker
+
+  jenkins-custom:
+    build: jenkins-custom
+    depends_on:
+      - docker
+    environment:
+      DOCKER_CERT_PATH: /certs/client
+      DOCKER_HOST: tcp://docker:2376
+      DOCKER_TLS_VERIFY: "1"
+    image: jenkins-custom:1.0
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - docker-certs:/certs/client:ro
+      - data:/var/jenkins_home
+
+volumes:
+  data:
+  docker:
+  docker-certs:

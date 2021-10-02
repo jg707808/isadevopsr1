@@ -16,7 +16,7 @@ docker network create todos-net
 
 Open `http://localhost/home` or `http://HOST_IP_ADDRESS/home` in a web browser.
 
-## Use Dosker Compose
+## Use Docker Compose
 
 Rename the `.env.example` file to `.env`.\
 Set the values of the environment variables in the `.env` file.

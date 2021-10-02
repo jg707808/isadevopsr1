@@ -23,7 +23,7 @@ docker container run -d --network=my-network --name=monitor monitor:1.0 [INTERVA
 docker container logs -f monitor
 ```
 
-## Use Dosker Compose
+## Use Docker Compose
 
 ```shell
 docker-compose up -d

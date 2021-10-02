@@ -33,7 +33,7 @@ Password: password.
 SELECT * FROM tasks;
 ```
 
-## Use Dosker Compose
+## Use Docker Compose
 
 Rename the `.env.example` file to `.env`.\
 Set the values of the environment variables in the `.env` file.
